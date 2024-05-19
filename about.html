@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>About Bead Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logobd.jpg" width="70px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+    </nav>
+    <img src="cart.png" width="30px" height="30px">
+    <img src="menu.png" class="menu-icon" 
+    onclick="menutoggle()">
+ 
+</div>      
+</div>
+
+<main>
+    <section>
+        <div class="about">
+        <h1>About Bead Day</h1>
+        <br>
+        <p>Bead Day is more than just an annual event; it's a vibrant celebration that transcends time, dedicated to the intricate artistry and cultural significance of beadwork. From the ancient civilizations that adorned themselves with beaded jewelry to the modern artisans pushing the boundaries of creativity, Bead Day serves as a testament to the enduring allure of beads.
+
+            At its core, Bead Day is a gathering of enthusiasts, artisans, and bead aficionados who share a common passion for the beauty and craftsmanship of beads. It's a day where stories are exchanged, techniques are shared, and new friendships are forged, all in the name of celebrating this timeless art form.
+            
+            But Bead Day  is more than just a celebration; it's a mission. A mission to promote the art of beadwork and raise awareness about its rich cultural heritage. Across the globe, beadwork has played a significant role in various cultures, from the intricate beadwork of Native American tribes to the elaborate beaded garments of African tribes. Bead Day serves as a platform to honor these traditions while also embracing the evolution of beadwork in the modern world.
+            
+            Whether you're a seasoned bead artist with years of experience or someone who simply appreciates the beauty of beaded jewelry, Bead Day welcomes all. It's a day to marvel at the intricate designs, to be inspired by the boundless creativity, and to revel in the joy that beads bring to our lives.
+            
+            So join us in celebrating Bead Day, a day dedicated to the artistry, creativity, and joy of beads.  Let's come together to honor the past, embrace the present, and shape the future of beadwork for generations to come. </p>
+        </div>    
+    </section>
+</main>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>All Products Bead Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logobd.jpg" width="70px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+    </nav>
+
+    <img src="cart.png" width="30px" height="30px">
+    <img src="menu.png" class="menu-icon" 
+    onclick="menutoggle()">
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Products</h2>   
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="ledition.jpg" alt="" class="product-image">
+            <h4>Limited Edition Bead Day Necklace</h4>
+            <p>180.00 pesos</p>
+            <button class="btn-add" data-product-id="20" data-product-name="Limited Edition Bead Day Necklace" data-product-price="180">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="product1.jpg" alt="" class="product-image">
+            <h4>Cherry Bracelet</h4>
+            <p>60.00 pesos</p>
+            <button class="btn-add" data-product-id="1" data-product-name="Cherry Bracelet" data-product-price="60">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="product2.jpg" alt="" class="product-image">
+            <h4>Pearl Bracelet</h4>
+            <p>50.00 pesos</p>
+            <button class="btn-add" data-product-id="2" data-product-name="Pearl Bracelet" data-product-price="50">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="product3.jpg" alt="" class="product-image">
+            <h4>Coquette Choker</h4>
+            <p>80.00 pesos</p>
+            <button class="btn-add" data-product-id="3" data-product-name="Coquette Choker" data-product-price="80">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="product4.jpg" alt="" class="product-image">
+            <h4>Butterfly Necklace</h4>
+            <p>95.00 pesos</p>
+            <button class="btn-add" data-product-id="4" data-product-name="Butterfly Necklace" data-product-price="95">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="simpheart.jpg" alt="" class="product-image">
+            <h4>Heart Bracelet</h4>
+            <p>50.00 pesos</p>
+            <button class="btn-add" data-product-id="5" data-product-name="Heart Bracelet" data-product-price="50">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="taylorver.jpg" alt="" class="product-image">
+            <h4>Taylor Version Phone Holder</h4>
+            <p>90.00 pesos</p>
+            <button class="btn-add" data-product-id="6" data-product-name="Taylor Version Phone Holder" data-product-price="90">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="harry.jpg" alt="" class="product-image">
+            <h4>Styles Phone Holder</h4>
+            <p>90.00 pesos</p>
+            <button class="btn-add" data-product-id="7" data-product-name="Styles Phone Holder" data-product-price="90">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="eightball.jpg" alt="" class="product-image">
+            <h4>8ball Bracelet</h4>
+            <p>80.00 pesos</p>
+            <button class="btn-add" data-product-id="8" data-product-name="8ball Bracelet" data-product-price="80">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="coquettebr.jpg" alt="" class="product-image">
+            <h4>Coquette Bracelet</h4>
+            <p>60.00 pesos</p>
+            <button class="btn-add" data-product-id="9" data-product-name="Coquette Bracelet" data-product-price="60">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="lover.jpg" alt="" class="product-image">
+            <h4>Lover Bracelet</h4>
+            <p>50.00 pesos</p>
+            <button class="btn-add" data-product-id="10" data-product-name="Lover Bracelet" data-product-price="50">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="SGbracelet.jpg" alt="" class="product-image">
+            <h4>SG Bracelet</h4>
+            <p>60.00 pesos</p>
+            <button class="btn-add" data-product-id="11" data-product-name="SG Bracelet" data-product-price="60">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="sza.jpg" alt="" class="product-image">
+            <h4>SZA Bracelet</h4>
+            <p>60.00 pesos</p>
+            <button class="btn-add" data-product-id="12" data-product-name="SZA Bracelet" data-product-price="60">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="b&r.jpg" alt="" class="product-image">
+            <h4>B&R Bracelet</h4>
+            <p>50.00 pesos</p>
+            <button class="btn-add" data-product-id="13" data-product-name="B&R Bracelet" data-product-price="50">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="tylerbracelet.jpg" alt="" class="product-image">
+            <h4>Tyler Bracelet</h4>
+            <p>70.00 pesos</p>
+            <button class="btn-add" data-product-id="14" data-product-name="Tyler Bracelet" data-product-price="70">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="stusybracelet.jpg" alt="" class="product-image">
+            <h4>Stusy Bracelet</h4>
+            <p>90.00 pesos</p>
+            <button class="btn-add" data-product-id="15" data-product-name="Stusy Bracelet" data-product-price="90">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="smiley.jpg" alt="" class="product-image">
+            <h4>Smiley Necklace</h4>
+            <p>120.00 pesos</p>
+            <button class="btn-add" data-product-id="16" data-product-name="Smiley Necklace" data-product-price="120">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="tyler.jpg" alt="" class="product-image">
+            <h4>Tyler Necklace</h4>
+            <p>120.00 pesos</p>
+            <button class="btn-add" data-product-id="17" data-product-name="Tyler Necklace" data-product-price="120">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="starstrip.jpg" alt="" class="product-image">
+            <h4>Star Chocker</h4>
+            <p>100.00 pesos</p>
+            <button class="btn-add" data-product-id="18" data-product-name="Star Chocker" data-product-price="100">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="col-4">
+            <img src="product2.jpg" alt="" class="product-image">
+            <h4>Star Pearl Chocker</h4>
+            <p>120.00 pesos</p>
+            <button class="btn-add" data-product-id="19" data-product-name="Star Pearl Chocker" data-product-price="120">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </div>
+</div>
+
+<!----footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="footer-col-2">
+            <img src="logobd.jpg">
+            <p>Bead Day: Where every bead tells a story and creativity sparkles! Join us in celebrating the art of beadwork and the beauty of self-expression through stunning jewelry creations.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!----js toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Contact Bead Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logobd.jpg" width="70px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <img src="cart.png" width="30px" height="30px">
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<section class="section sec5 community" id="community">
+    <div class="contact-container">
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>Contact us here</h4>
+                <p>Have queries or concerns? Contact us! You can reach us through our social media:</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Location</span>
+                        </div>
+                        <p>: San Fernando, Pampanga</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                            <span>Email</span>
+                        </div>
+                        <p>: beaddayph@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-mobile"></i>
+                            <span>Mobile Number</span>
+                        </div>
+                        <p>: 0945 678 6508</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/profile.php?id=61556095901489" target="_blank" class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <span>Facebook page</span>
+                        </div>
+                        <p>: Bead Day Ph</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <span>Language/s</span>
+                        </div>
+                        <p>: English & Filipino</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-contact">
+                <form action="" class="contact-form" id="contactForm">
+                    <div class="input-control i-c-2">
+                        <input type="text" required placeholder="YOUR NAME" id="name">
+                        <input type="email" required placeholder="YOUR EMAIL" id="email">
+                    </div>
+                    <div class="input-control">
+                        <input type="text" required placeholder="ENTER SUBJECT" id="subject">
+                    </div>
+                    <div class="input-control">
+                        <textarea id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="button" onclick="handleSubmit()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    function handleSubmit() {
+        // Submit the form data to a server or perform some action
+        alert("Form submitted!");
+
+        // Clear the form fields
+        document.getElementById("contactForm").reset();
+    }
+</script>
+</body>
+</html>
